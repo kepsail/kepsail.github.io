@@ -12,7 +12,7 @@
     box-sizing:border-box;
 }
 
-body{
+/* body{
     font-family: "Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;
     background: linear-gradient(135deg,#0b1020,#121d3b,#1b2b57);
     color:#fff;
@@ -21,6 +21,19 @@ body{
     justify-content:center;
     align-items:center;
     overflow:hidden;
+} */
+
+body{
+    font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;
+    background:linear-gradient(135deg,#0b1020,#121d3b,#1b2b57);
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding:60px 0;
 }
 
 body::before{
@@ -38,12 +51,19 @@ body::before{
     to{transform:translate(20px,20px);}
 }
 
-.container{
+/* .container{
     width:min(900px,92%);
     position:relative;
     z-index:2;
-}
+} */
 
+.container{
+    width:80%;
+    max-width:1600px;
+    position:relative;
+    z-index:2;
+}
+    
 h1{
     text-align:center;
     font-size:3rem;
@@ -105,14 +125,39 @@ footer{
     font-size:.9rem;
 }
 
-@media(max-width:700px){
+/* @media(max-width:700px){
     h1{
         font-size:2.2rem;
     }
     .cn{
         font-size:1.08rem;
     }
+} */
+
+@media(max-width:900px){
+
+    .container{
+        width:92%;
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    .subtitle{
+        font-size:1rem;
+    }
+
+    .cn{
+        font-size:1.08rem;
+    }
+
+    .en{
+        font-size:.92rem;
+    }
+
 }
+
 </style>
 
 </head>
