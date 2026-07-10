@@ -219,32 +219,15 @@ At present, the most effective way for humans to retain control over AI appears 
 
 
     
-<!-- <script>
-const cards=document.querySelectorAll(".statement");
-
-const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-    });
-},{
-    threshold:0.2
-});
-
-cards.forEach((card,index)=>{
-    card.style.transitionDelay=(index*0.3)+"s";
-    observer.observe(card);
-});
-
-window.addEventListener("load",()=>{
-    cards.forEach((card,index)=>{
-        setTimeout(()=>{
-            card.classList.add("show");
-        },500+index*500);
+<script>
+window.addEventListener("load", () => {
+    document.querySelectorAll(".statement").forEach(card => {
+        card.classList.add("show");
     });
 });
-</script> -->
+</script>
+
+    
 
 </body>
 </html>
